@@ -1,8 +1,14 @@
 {
     "name": "rx-fn-observe",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
+    "version": "0.0.0",
+    "description": "Observe any object's method calls",
+    "keywords": [
+        "rxjs",
+        "ReactiveX",
+        "spy",
+        "watch",
+        "proxy"
+    ],
     "scripts": {
         "build": "tsc -p src/tsconfig.json",
         "lint": "tslint -p tsconfig.json",
@@ -10,6 +16,13 @@
     },
     "author": "Tao Cumplido",
     "license": "ISC",
+    "repository": "github:tao-cumplido/rx-fn-observe",
+    "types": "dist/index.d.ts",
+    "main": "dist/index.js",
+    "files": [
+        "dist/*",
+        "src/*"
+    ],
     "devDependencies": {
         "ava": "^1.0.0-beta.8",
         "husky": "^1.1.0",
