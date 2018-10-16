@@ -4,6 +4,7 @@ export type FunctionKeys<T extends object> = { [P in keyof T]: T[P] extends Func
 
 // prettier-ignore
 export type ArgumentList<T> =
+    T extends () => any ? void :
     T extends (a: infer A) => any ? [A] :
     T extends (a: infer A, b: infer B) => any ? [A, B] :
     T extends (a: infer A, b: infer B, c: infer C) => any ? [A, B, C] :
